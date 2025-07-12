@@ -7,34 +7,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Quote Generator</h1>
-    </header>
-    <form>
-      <input
-        type="text"
-        placeholder="Enter the topic"
-        autofocus
-        required
-        autocomplete="off"
-      />
-      <input type="submit" />
-    </form>
-    <div>The quote will appear here</div>
-    <footer>
-      This project was coded by
-      <a href="http://github.com/YanaKorniichuk" target="_blank"
-        >Yana Korniichuk
-      </a>
-      and is
-      <a href="http://github.com/YanaKorniichuk/quote-generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-      and was hosted on
-      <a href="http://quote-generatorpr.netlify.app/" target="_blank"
-        >Netlify
-      </a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Quote Generator</h1>
+      </header>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the topic"
+          autofocus
+          required
+          autocomplete="off"
+          class="instructions"
+        />
+        <input type="submit" class="submit-button" />
+      </form>
+      <div class="quote">The quote will appear here</div>
+      <footer>
+        This project was coded by
+        <a href="http://github.com/YanaKorniichuk" target="_blank"
+          >Yana Korniichuk
+        </a>
+        and is
+        <a
+          href="http://github.com/YanaKorniichuk/quote-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and was hosted on
+        <a href="http://quote-generatorpr.netlify.app/" target="_blank"
+          >Netlify
+        </a>
+      </footer>
+    </div>
     <script src="js.js"></script>
   </body>
 </html>
