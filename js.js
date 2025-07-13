@@ -15,7 +15,7 @@ function generateQuote(event) {
   let context =
     "You are very knowledgeable AI Assistant that knows a lot of quotes of successfull people, your task is to give short quote about topic from the user instructions";
   let prompt = `generate the quote about ${quoteInstructions.value}`;
-  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiURL).then(displayQuote);
 }
 
